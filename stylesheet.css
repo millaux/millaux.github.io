@@ -1,0 +1,260 @@
+﻿body, html, .indexpage, #intro {
+	height: 100%;
+	  margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+	}
+	
+
+#intro {
+    background: url("baking.jpg") no-repeat center center fixed, linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-size: cover;
+	background-blend-mode: overlay;
+	}
+
+.otsikko { 
+	font-family: 'Parisienne', cursive, Arial;
+	font-size: 100px;
+	color: #E6EBE0;
+	}
+	
+.alaotsikko {
+	font-size: 25px;
+		color: #E6EBE0;
+	}
+	
+hr.rounded {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+}
+	
+	
+	
+.bg { 
+  background: url("coffee.jpg"), linear-gradient(to right, rgb(0,0,0) 30%,transparent);
+  height: 50%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  }
+  
+ .bg-third {
+  background: url("mansikka1.2.jpg"), linear-gradient(to right, rgb(0,0,0) 15%,transparent);
+  height: 50%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  }
+  
+  .bg-second {
+  background: url("story1.jpg"), linear-gradient(to right, rgb(0,0,0) 15%,transparent);
+  height: 50%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  }
+  
+ .jumbotron {
+	background-color: #9BC1BC;
+	}
+  
+ .toka{
+	color: white;
+	font-family: 'Parisienne', cursive, Arial;
+	font-size: 45px;
+	color: #E6EBE0;
+	}
+	
+.perusohje {
+	font-size: 40px;
+	color: #E6EBE0;	
+	}
+	
+.pohja {
+	background-color: #9BC1BC;
+	margin-left:-20px;
+	border-radius: 7px;
+	}
+
+
+hr.line{
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(237, 106, 90, 0.75), rgba(0, 0, 0, 0));
+}
+
+hr.divide {
+    height: 4px;
+    background-image: linear-gradient(to right, rgba(237, 106, 90, 0.75), rgba(0, 0, 0, 0));
+	}
+	
+.navbar {
+	font-size: 23px;
+	}
+
+.fixed{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 20;
+	}
+	
+.esimerkki {
+	font-size: 20px;
+	color: #ED6A5A;
+	}
+	
+.btn { 
+	background-color: #ED6A5A;
+	color: #E6EBE0;
+	}
+
+	
+footer {
+	background-color: #9BC1BC;
+	}
+	
+	
+/* Small devices (landscape phones, 544px and up) */
+  @media (min-width: 400px) and (max-width: 767px) {  
+    .otsikko {font-size: 50px;}
+	.alaotsikko {font-size: 20px;}
+	.perusohje {font-size: 35px;}
+  }
+
+
+/*
+    code by Iatek LLC 2018 - CC 2.0 License - Attribution required
+    code customized by Azmind.com
+*/
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Show 4th slide on md if col-md-4*/
+    .carousel-inner .active.col-md-4.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -33.3333%; 
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+    /* Show 3rd slide on sm if col-sm-6*/
+    .carousel-inner .active.col-sm-6.carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -50%; 
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+}
+@media (min-width: 576px) {
+    .carousel-item {
+        margin-right: 0;
+    }
+    /* show 2 items */
+    .carousel-inner .active + .carousel-item {
+        display: block;
+    }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
+        transition: none;
+    }
+    .carousel-inner .carousel-item-next {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* farthest right hidden item must be also positioned for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+/* MD */
+@media (min-width: 768px) {
+    /* show 3rd of 3 item slide */
+    .carousel-inner .active + .carousel-item + .carousel-item {
+        display: block;
+    }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    .carousel-inner .carousel-item-next {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+    /* left or forward direction */
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* right or prev direction */
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+/* LG */
+@media (min-width: 991px) {
+    /* show 4th item */
+    .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+        display: block;
+    }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    /* Show 5th slide on lg if col-lg-3 */
+    .carousel-inner .active.col-lg-3.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -25%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    /* left or forward direction */
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* right or prev direction //t - previous slide direction last item animation fix */
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
